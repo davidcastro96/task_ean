@@ -38,7 +38,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/task', 'Home::task');
 $routes->post('/login', 'Home::login');
-$routes->get('/signup', 'Home::signup');
+$routes->get('/signoff', 'Home::signoff');
 $routes->get('/registro', 'Home::registro');
 
 /*

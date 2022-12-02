@@ -12,4 +12,10 @@ class Usuarios extends Model
     $Usuario->where($data);
     return $Usuario->get()->getResultArray();
   }
+  public function crearUsuario($data)
+  {
+    $Usuario = $this->db->table('usuarios');
+    $Usuario->insert($data);
+    return $Usuario->get()->getResultArray();
+  }
 }

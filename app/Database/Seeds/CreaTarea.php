@@ -10,7 +10,7 @@ class CreaTarea extends Seeder
     {
         $titulo = "primera tarea";
         $tipo = "personal"; //tipo de tarea PERSONAL, TRABAJO, ESTUDIO
-        $detalle = "descripcion de una tarea"; //descripcion de tarea
+        $detalle = "descripcion de una tarea"; //descripcion de
         $tiempo = "2";
         $data = [
             'titulo' => $titulo,

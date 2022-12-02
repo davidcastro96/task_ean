@@ -16,7 +16,7 @@
 
     <div class="grid">
 
-      <form action="<?php echo base_url('/signup') ?>" method="POST" class="form login">
+      <form action="<?php echo base_url('/registro') ?>" method="POST" class="form login">
 
         <div class="form__field">
           <label for="login__nombre"><svg class="icon">
@@ -52,8 +52,8 @@
 
       </form>
 
-      <p class="text--center"><a href="<?php echo base_url('/') ?>">regresar</a><svg class="icon">
-          <use xlink:href="#icon-arrow-left"></use>
+      <p class="text--center"><a href="<?php echo base_url('/') ?>">Regresar</a><svg class="icon">
+          <use xlink:href="#icon-arrow-right"></use>
         </svg></p>
 
     </div>

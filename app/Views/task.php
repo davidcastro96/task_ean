@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <a href="<?php echo base_url('/signup') ?>">Salir</a>
+  <a href="<?php echo base_url('/signoff') ?>">Salir</a>
   <h1><?php echo session('nombre') ?> sesion iniciada</h1>
 </body>
 

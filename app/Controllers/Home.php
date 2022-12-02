@@ -16,7 +16,7 @@ class Home extends BaseController
     {
         return view('task');
     }
-
+    // función para iniciar con el login y validar los datos de inicio de sesión
     public function login()
     {
         $usuario = $this->request->getPost('u'); //usuario en html
@@ -37,14 +37,14 @@ class Home extends BaseController
             return redirect()->to(base_url('/'))->with('mensaje', '0');
         }
     }
-
-    public function signup()
+    // función o método que permite cerrar la sesión que el usuario haya creado
+    public function signoff()
     {
         $session = session();
         $session->destroy();
         return redirect()->to(base_url('/'));
     }
-
+    // función que permite abrir el formulario de registro
     public function registro()
     {
         return view('registro');
