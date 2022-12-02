@@ -9,7 +9,8 @@
 </head>
 
 <body>
-  <h1>Estas con la sesion iniciada</h1>
+  <a href="<?php echo base_url('/signup') ?>">Salir</a>
+  <h1><?php echo session('nombre') ?> sesion iniciada</h1>
 </body>
 
 </html>

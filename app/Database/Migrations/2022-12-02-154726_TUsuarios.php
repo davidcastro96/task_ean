@@ -19,6 +19,10 @@ class TUsuarios extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => '100',
             ],
+            'usuario' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '100',
+            ],
             'nombre' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '100',

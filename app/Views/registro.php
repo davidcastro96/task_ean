@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   <link rel="stylesheet" href=<?php echo base_url('/css/style.css'); ?>>
-  <title>Task - Crea tareras para mantenerte organizado</title>
+  <title>Registro - app Task</title>
 </head>
 
 <body>
@@ -16,13 +16,27 @@
 
     <div class="grid">
 
-      <form action="<?php echo base_url('/login') ?>" method="POST" class="form login">
+      <form action="<?php echo base_url('/signup') ?>" method="POST" class="form login">
 
         <div class="form__field">
-          <label for="login__username"><svg class="icon">
+          <label for="login__nombre"><svg class="icon">
               <use xlink:href="#icon-user"></use>
-            </svg><span class="hidden">Username</span></label>
-          <input autocomplete="off" id="login__username" type="text" name="u" class="form__input" placeholder="Usuario" required>
+            </svg><span class="hidden">Nombre</span></label>
+          <input autocomplete="off" id="login__username" type="text" name="no" class="form__input" placeholder="Nombre" required>
+        </div>
+
+        <div class="form__field">
+          <label for="login__nombre"><svg class="icon">
+              <use xlink:href="#icon-lock"></use>
+            </svg><span class="hidden">Apellido</span></label>
+          <input autocomplete="off" id="login__username" type="text" name="ap" class="form__input" placeholder="Apellido" required>
+        </div>
+
+        <div class="form__field">
+          <label for="login__nombre"><svg class="icon">
+              <use xlink:href="#icon-user"></use>
+            </svg><span class="hidden">usuario</span></label>
+          <input autocomplete="off" id="login__username" type="text" name="user" class="form__input" placeholder="Usuario" required>
         </div>
 
         <div class="form__field">
@@ -33,13 +47,13 @@
         </div>
 
         <div class="form__field">
-          <input type="submit" value="iniciar">
+          <input type="submit" value="REGISTRAR">
         </div>
 
       </form>
 
-      <p class="text--center">No estoy registrado <a href="<?php echo base_url('/registro') ?>">Registrarme</a> <svg class="icon">
-          <use xlink:href="#icon-arrow-right"></use>
+      <p class="text--center"><a href="<?php echo base_url('/') ?>">regresar</a><svg class="icon">
+          <use xlink:href="#icon-arrow-left"></use>
         </svg></p>
 
     </div>
