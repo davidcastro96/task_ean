@@ -41,6 +41,8 @@ $routes->post('/login', 'Home::login');
 $routes->get('/signoff', 'Home::signoff');
 $routes->get('/registro', 'Home::registro');
 $routes->post('/registro', 'Home::registroUsuario');
+$routes->get('/google_maps', 'Home::google_maps');
+$routes->get('/crimenes_chicago', 'Home::crimenes_chicago');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

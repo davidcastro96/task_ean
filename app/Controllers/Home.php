@@ -69,4 +69,14 @@ class Home extends BaseController
     {
         return view('registro');
     }
+
+    public function google_maps()
+    {
+        return view('google_maps');
+    }
+
+    public function crimenes_chicago()
+    {
+        return view('crimenes_chicago');
+    }
 }

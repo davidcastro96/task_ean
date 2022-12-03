@@ -1,0 +1,576 @@
+CRITICAL - 2022-12-02 15:38:21 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 224.
+ 1 SYSTEMPATH\CodeIgniter.php(224): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(182): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2022-12-02 08:47:18 --> require(database.php): Failed to open stream: No such file or directory
+in APPPATH\Views\login.php on line 8.
+ 1 APPPATH\Views\login.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(database.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\login.php', 8)
+ 2 APPPATH\Views\login.php(8): require()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login', [], true)
+ 6 APPPATH\Controllers\Login.php(9): view('login')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 08:50:23 --> require(Database.php): Failed to open stream: No such file or directory
+in APPPATH\Views\login.php on line 8.
+ 1 APPPATH\Views\login.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(Database.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\login.php', 8)
+ 2 APPPATH\Views\login.php(8): require()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login', [], true)
+ 6 APPPATH\Controllers\Login.php(9): view('login')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 08:50:24 --> require(Database.php): Failed to open stream: No such file or directory
+in APPPATH\Views\login.php on line 8.
+ 1 APPPATH\Views\login.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(Database.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\login.php', 8)
+ 2 APPPATH\Views\login.php(8): require()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login', [], true)
+ 6 APPPATH\Controllers\Login.php(9): view('login')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 09:11:52 --> Call to undefined function set_value()
+in APPPATH\Views\login.php on line 26.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH\Controllers\Login.php(9): view('login')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 09:38:27 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 10:25:45 --> mysqli_sql_exception: Unknown table 'task.tasks' in C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php(292): mysqli->query('DROP TABLE `tas...', 0)
+#1 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `tas...')
+#2 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `tas...')
+#3 C:\xampp\htdocs\app_tareas\system\Database\Forge.php(600): CodeIgniter\Database\BaseConnection->query('DROP TABLE `tas...')
+#4 C:\xampp\htdocs\app_tareas\app\Database\Migrations\2022-12-02-155736_TTasks.php(41): CodeIgniter\Database\Forge->dropTable('tasks')
+#5 C:\xampp\htdocs\app_tareas\system\Database\MigrationRunner.php(868): App\Database\Migrations\TTasks->down()
+#6 C:\xampp\htdocs\app_tareas\system\Database\MigrationRunner.php(298): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\app_tareas\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xampp\htdocs\app_tareas\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\app_tareas\system\CLI\BaseCommand.php(112): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\app_tareas\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\xampp\htdocs\app_tareas\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\xampp\htdocs\app_tareas\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\xampp\htdocs\app_tareas\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#14 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#15 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#16 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 C:\xampp\htdocs\app_tareas\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#18 C:\xampp\htdocs\app_tareas\spark(98): CodeIgniter\CLI\Console->run()
+#19 {main}
+ERROR - 2022-12-02 10:26:20 --> mysqli_sql_exception: Unknown table 'task.tasks' in C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php(292): mysqli->query('DROP TABLE `tas...', 0)
+#1 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `tas...')
+#2 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `tas...')
+#3 C:\xampp\htdocs\app_tareas\system\Database\Forge.php(600): CodeIgniter\Database\BaseConnection->query('DROP TABLE `tas...')
+#4 C:\xampp\htdocs\app_tareas\app\Database\Migrations\2022-12-02-155736_TTasks.php(41): CodeIgniter\Database\Forge->dropTable('tasks')
+#5 C:\xampp\htdocs\app_tareas\system\Database\MigrationRunner.php(868): App\Database\Migrations\TTasks->down()
+#6 C:\xampp\htdocs\app_tareas\system\Database\MigrationRunner.php(298): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\app_tareas\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xampp\htdocs\app_tareas\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\app_tareas\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\app_tareas\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\app_tareas\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\app_tareas\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2022-12-02 10:26:51 --> mysqli_sql_exception: Unknown table 'task.tasks' in C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php(292): mysqli->query('DROP TABLE `tas...', 0)
+#1 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `tas...')
+#2 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `tas...')
+#3 C:\xampp\htdocs\app_tareas\system\Database\Forge.php(600): CodeIgniter\Database\BaseConnection->query('DROP TABLE `tas...')
+#4 C:\xampp\htdocs\app_tareas\app\Database\Migrations\2022-12-02-155736_TTasks.php(41): CodeIgniter\Database\Forge->dropTable('tasks')
+#5 C:\xampp\htdocs\app_tareas\system\Database\MigrationRunner.php(868): App\Database\Migrations\TTasks->down()
+#6 C:\xampp\htdocs\app_tareas\system\Database\MigrationRunner.php(298): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\app_tareas\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xampp\htdocs\app_tareas\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\app_tareas\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\app_tareas\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\app_tareas\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\app_tareas\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+CRITICAL - 2022-12-02 11:35:18 --> Invalid file: taks.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('taks.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('taks', [], true)
+ 3 APPPATH\Controllers\Home.php(12): view('taks', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 11:35:26 --> Invalid file: taks.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('taks.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('taks', [], true)
+ 3 APPPATH\Controllers\Home.php(12): view('taks', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 11:35:27 --> Invalid file: taks.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('taks.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('taks', [], true)
+ 3 APPPATH\Controllers\Home.php(12): view('taks', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 11:35:28 --> Invalid file: taks.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('taks.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('taks', [], true)
+ 3 APPPATH\Controllers\Home.php(12): view('taks', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 11:35:29 --> Invalid file: taks.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('taks.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('taks', [], true)
+ 3 APPPATH\Controllers\Home.php(12): view('taks', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 14:34:49 --> Undefined property: App\Controllers\Home::$db
+in APPPATH\Controllers\Home.php on line 66.
+ 1 APPPATH\Controllers\Home.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$db', 'APPPATH\\Controllers\\Home.php', 66)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 14:34:56 --> Undefined property: App\Controllers\Home::$db
+in APPPATH\Controllers\Home.php on line 66.
+ 1 APPPATH\Controllers\Home.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$db', 'APPPATH\\Controllers\\Home.php', 66)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 20:10:42 --> mysqli_sql_exception: Column 'email' cannot be null in C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\app_tareas\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\app_tareas\app\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\app_tareas\app\Controllers\Home.php(64): App\Models\Usuarios->crearUsuario(Array)
+#6 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(927): App\Controllers\Home->registro()
+#7 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\app_tareas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-02 20:10:42 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (\'juan david\', \'castro perez\', \'jcastro\', NULL, \'$2y$10$xVwZbyAXsd3U.o/i9VnDz.NhiGAMqd5PlWpMAN3SGK8vybl4GkOji\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (\'juan david\', \'castro perez\', \'jcastro\', NULL, \'$2y$10$xVwZbyAXsd3U.o/i9VnDz.NhiGAMqd5PlWpMAN3SGK8vybl4GkOji\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (\'juan david\', \'castro perez\', \'jcastro\', NULL, \'$2y$10$xVwZbyAXsd3U.o/i9VnDz.NhiGAMqd5PlWpMAN3SGK8vybl4GkOji\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (:nombre:, :apellido:, :usuario:, :email:, :password:)', [...], false)
+ 5 APPPATH\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(64): App\Models\Usuarios->crearUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 20:11:42 --> mysqli_sql_exception: Column 'email' cannot be null in C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\app_tareas\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\app_tareas\app\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\app_tareas\app\Controllers\Home.php(64): App\Models\Usuarios->crearUsuario(Array)
+#6 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(927): App\Controllers\Home->registro()
+#7 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\app_tareas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-02 20:11:42 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (\'juan david\', \'castro perez\', \'jcastro\', NULL, \'$2y$10$vKYITu0cx8KAOqqELVn5juY5gcRqoCWsw.v8yH0pTxlzqG.aDPEOq\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (\'juan david\', \'castro perez\', \'jcastro\', NULL, \'$2y$10$vKYITu0cx8KAOqqELVn5juY5gcRqoCWsw.v8yH0pTxlzqG.aDPEOq\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (\'juan david\', \'castro perez\', \'jcastro\', NULL, \'$2y$10$vKYITu0cx8KAOqqELVn5juY5gcRqoCWsw.v8yH0pTxlzqG.aDPEOq\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (:nombre:, :apellido:, :usuario:, :email:, :password:)', [...], false)
+ 5 APPPATH\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(64): App\Models\Usuarios->crearUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 20:13:30 --> Undefined constant "CodeIgniter\Debug\VENDORPATH"
+in SYSTEMPATH\Debug\Exceptions.php on line 177.
+ 1 SYSTEMPATH\Debug\Exceptions.php(157): CodeIgniter\Debug\Exceptions->isFakerDeprecationError(8192, 'password_hash(): Passing null to parameter #1 ($password) of type string is deprecated', 'APPPATH\\Controllers\\Home.php', 64)
+ 2 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'password_hash(): Passing null to parameter #1 ($password) of type string is deprecated', 'APPPATH\\Controllers\\Home.php', 64)
+ 3 APPPATH\Controllers\Home.php(64): password_hash(null, '2y')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 20:13:57 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\app_tareas\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\app_tareas\app\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\app_tareas\app\Controllers\Home.php(63): App\Models\Usuarios->crearUsuario(Array)
+#6 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(927): App\Controllers\Home->registro()
+#7 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\app_tareas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-02 20:13:57 --> Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`) VALUES (NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`) VALUES (NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`) VALUES (NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`) VALUES (:nombre:, :apellido:, :usuario:, :email:)', [...], false)
+ 5 APPPATH\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(63): App\Models\Usuarios->crearUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 20:18:54 --> syntax error, unexpected identifier "word"
+in APPPATH\Controllers\Home.php on line 54.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 20:19:24 --> Undefined constant "CodeIgniter\Debug\VENDORPATH"
+in SYSTEMPATH\Debug\Exceptions.php on line 177.
+ 1 SYSTEMPATH\Debug\Exceptions.php(157): CodeIgniter\Debug\Exceptions->isFakerDeprecationError(8192, 'password_hash(): Passing null to parameter #1 ($password) of type string is deprecated', 'APPPATH\\Controllers\\Home.php', 64)
+ 2 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'password_hash(): Passing null to parameter #1 ($password) of type string is deprecated', 'APPPATH\\Controllers\\Home.php', 64)
+ 3 APPPATH\Controllers\Home.php(64): password_hash(null, '2y')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 20:20:01 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\app_tareas\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\app_tareas\app\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\app_tareas\app\Controllers\Home.php(64): App\Models\Usuarios->crearUsuario(Array)
+#6 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(927): App\Controllers\Home->registro()
+#7 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\app_tareas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-02 20:20:01 --> Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (:nombre:, :apellido:, :usuario:, :email:, :password:)', [...], false)
+ 5 APPPATH\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(64): App\Models\Usuarios->crearUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 20:21:42 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\app_tareas\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\app_tareas\app\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\app_tareas\app\Controllers\Home.php(64): App\Models\Usuarios->crearUsuario(Array)
+#6 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(927): App\Controllers\Home->registro()
+#7 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\app_tareas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-02 20:21:42 --> Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (:nombre:, :apellido:, :usuario:, :email:, :password:)', [...], false)
+ 5 APPPATH\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(64): App\Models\Usuarios->crearUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 20:22:18 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\app_tareas\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\app_tareas\app\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\app_tareas\app\Controllers\Home.php(63): App\Models\Usuarios->crearUsuario(Array)
+#6 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(927): App\Controllers\Home->registro()
+#7 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\app_tareas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-02 20:22:18 --> Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (:nombre:, :apellido:, :usuario:, :email:, :password:)', [...], false)
+ 5 APPPATH\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(63): App\Models\Usuarios->crearUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 20:22:21 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\app_tareas\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\app_tareas\app\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\app_tareas\app\Controllers\Home.php(63): App\Models\Usuarios->crearUsuario(Array)
+#6 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(927): App\Controllers\Home->registro()
+#7 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\app_tareas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-02 20:22:21 --> Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `email`, `password`) VALUES (:nombre:, :apellido:, :usuario:, :email:, :password:)', [...], false)
+ 5 APPPATH\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(63): App\Models\Usuarios->crearUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 20:43:41 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\app_tareas\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\app_tareas\app\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\app_tareas\app\Controllers\Home.php(60): App\Models\Usuarios->crearUsuario(Array)
+#6 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(927): App\Controllers\Home->registro()
+#7 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\app_tareas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-02 20:43:41 --> Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `password`) VALUES (NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `password`) VALUES (NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `password`) VALUES (NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `password`) VALUES (:nombre:, :apellido:, :usuario:, :password:)', [...], false)
+ 5 APPPATH\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(60): App\Models\Usuarios->crearUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 20:44:20 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\app_tareas\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\app_tareas\app\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\app_tareas\app\Controllers\Home.php(60): App\Models\Usuarios->crearUsuario(Array)
+#6 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(927): App\Controllers\Home->registro()
+#7 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\app_tareas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-02 20:44:20 --> Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `password`) VALUES (NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `password`) VALUES (NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `password`) VALUES (NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `password`) VALUES (:nombre:, :apellido:, :usuario:, :password:)', [...], false)
+ 5 APPPATH\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(60): App\Models\Usuarios->crearUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 20:44:26 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\app_tareas\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\app_tareas\app\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\app_tareas\app\Controllers\Home.php(60): App\Models\Usuarios->crearUsuario(Array)
+#6 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(927): App\Controllers\Home->registro()
+#7 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\app_tareas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-02 20:44:26 --> Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `password`) VALUES (NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `password`) VALUES (NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `password`) VALUES (NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `password`) VALUES (:nombre:, :apellido:, :usuario:, :password:)', [...], false)
+ 5 APPPATH\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(60): App\Models\Usuarios->crearUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 20:47:46 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\app_tareas\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\app_tareas\app\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\app_tareas\app\Controllers\Home.php(60): App\Models\Usuarios->crearUsuario(Array)
+#6 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(927): App\Controllers\Home->registro()
+#7 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\app_tareas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-02 20:47:46 --> Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `password`) VALUES (NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `password`) VALUES (NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `password`) VALUES (NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `usuario`, `password`) VALUES (:nombre:, :apellido:, :usuario:, :password:)', [...], false)
+ 5 APPPATH\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(60): App\Models\Usuarios->crearUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 20:59:30 --> Undefined constant "CodeIgniter\Debug\VENDORPATH"
+in SYSTEMPATH\Debug\Exceptions.php on line 177.
+ 1 SYSTEMPATH\Debug\Exceptions.php(157): CodeIgniter\Debug\Exceptions->isFakerDeprecationError(8192, 'password_hash(): Passing null to parameter #1 ($password) of type string is deprecated', 'APPPATH\\Controllers\\Home.php', 50)
+ 2 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'password_hash(): Passing null to parameter #1 ($password) of type string is deprecated', 'APPPATH\\Controllers\\Home.php', 50)
+ 3 APPPATH\Controllers\Home.php(50): password_hash(null, '2y')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 20:59:35 --> Undefined constant "CodeIgniter\Debug\VENDORPATH"
+in SYSTEMPATH\Debug\Exceptions.php on line 177.
+ 1 SYSTEMPATH\Debug\Exceptions.php(157): CodeIgniter\Debug\Exceptions->isFakerDeprecationError(8192, 'password_hash(): Passing null to parameter #1 ($password) of type string is deprecated', 'APPPATH\\Controllers\\Home.php', 50)
+ 2 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'password_hash(): Passing null to parameter #1 ($password) of type string is deprecated', 'APPPATH\\Controllers\\Home.php', 50)
+ 3 APPPATH\Controllers\Home.php(50): password_hash(null, '2y')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 21:00:47 --> Undefined constant "CodeIgniter\Debug\VENDORPATH"
+in SYSTEMPATH\Debug\Exceptions.php on line 177.
+ 1 SYSTEMPATH\Debug\Exceptions.php(157): CodeIgniter\Debug\Exceptions->isFakerDeprecationError(8192, 'password_hash(): Passing null to parameter #1 ($password) of type string is deprecated', 'APPPATH\\Controllers\\Home.php', 50)
+ 2 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'password_hash(): Passing null to parameter #1 ($password) of type string is deprecated', 'APPPATH\\Controllers\\Home.php', 50)
+ 3 APPPATH\Controllers\Home.php(50): password_hash(null, '2y')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 21:02:10 --> Undefined constant "CodeIgniter\Debug\VENDORPATH"
+in SYSTEMPATH\Debug\Exceptions.php on line 177.
+ 1 SYSTEMPATH\Debug\Exceptions.php(157): CodeIgniter\Debug\Exceptions->isFakerDeprecationError(8192, 'password_hash(): Passing null to parameter #1 ($password) of type string is deprecated', 'APPPATH\\Controllers\\Home.php', 67)
+ 2 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'password_hash(): Passing null to parameter #1 ($password) of type string is deprecated', 'APPPATH\\Controllers\\Home.php', 67)
+ 3 APPPATH\Controllers\Home.php(67): password_hash(null, '2y')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 21:02:13 --> Undefined constant "CodeIgniter\Debug\VENDORPATH"
+in SYSTEMPATH\Debug\Exceptions.php on line 177.
+ 1 SYSTEMPATH\Debug\Exceptions.php(157): CodeIgniter\Debug\Exceptions->isFakerDeprecationError(8192, 'password_hash(): Passing null to parameter #1 ($password) of type string is deprecated', 'APPPATH\\Controllers\\Home.php', 67)
+ 2 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'password_hash(): Passing null to parameter #1 ($password) of type string is deprecated', 'APPPATH\\Controllers\\Home.php', 67)
+ 3 APPPATH\Controllers\Home.php(67): password_hash(null, '2y')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registro()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 21:07:11 --> mysqli_sql_exception: Column 'email' cannot be null in C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\app_tareas\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\app_tareas\app\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\app_tareas\app\Controllers\Home.php(62): App\Models\Usuarios->crearUsuario(Array)
+#6 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(927): App\Controllers\Home->registroUsuario()
+#7 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\app_tareas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-02 21:07:11 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `usuarios` (`password`, `usuario`, `nombre`, `apellido`, `email`) VALUES (\'$2y$10$FnhoxcLAyZhb3aXFDdJHQejMomYWU5.iOz0er3Ey832oBtM/m6GJW\', \'msabogal\', \'mateo\', \'sabogal\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`password`, `usuario`, `nombre`, `apellido`, `email`) VALUES (\'$2y$10$FnhoxcLAyZhb3aXFDdJHQejMomYWU5.iOz0er3Ey832oBtM/m6GJW\', \'msabogal\', \'mateo\', \'sabogal\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`password`, `usuario`, `nombre`, `apellido`, `email`) VALUES (\'$2y$10$FnhoxcLAyZhb3aXFDdJHQejMomYWU5.iOz0er3Ey832oBtM/m6GJW\', \'msabogal\', \'mateo\', \'sabogal\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`password`, `usuario`, `nombre`, `apellido`, `email`) VALUES (:password:, :usuario:, :nombre:, :apellido:, :email:)', [...], false)
+ 5 APPPATH\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(62): App\Models\Usuarios->crearUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registroUsuario()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-02 21:09:05 --> mysqli_sql_exception: Column 'email' cannot be null in C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app_tareas\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\app_tareas\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\app_tareas\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\app_tareas\app\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\app_tareas\app\Controllers\Home.php(63): App\Models\Usuarios->crearUsuario(Array)
+#6 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(927): App\Controllers\Home->registroUsuario()
+#7 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\app_tareas\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\app_tareas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-02 21:09:05 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `usuarios` (`password`, `usuario`, `nombre`, `apellido`, `email`) VALUES (\'$2y$10$B6LvYRKrGLVnZJuVTcIiW.fgT9XujlNMtndZYmetJ81cVzKrXI..m\', \'msabogal\', \'mateo\', \'sabogal\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`password`, `usuario`, `nombre`, `apellido`, `email`) VALUES (\'$2y$10$B6LvYRKrGLVnZJuVTcIiW.fgT9XujlNMtndZYmetJ81cVzKrXI..m\', \'msabogal\', \'mateo\', \'sabogal\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`password`, `usuario`, `nombre`, `apellido`, `email`) VALUES (\'$2y$10$B6LvYRKrGLVnZJuVTcIiW.fgT9XujlNMtndZYmetJ81cVzKrXI..m\', \'msabogal\', \'mateo\', \'sabogal\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`password`, `usuario`, `nombre`, `apellido`, `email`) VALUES (:password:, :usuario:, :nombre:, :apellido:, :email:)', [...], false)
+ 5 APPPATH\Models\Usuarios.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(63): App\Models\Usuarios->crearUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->registroUsuario()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

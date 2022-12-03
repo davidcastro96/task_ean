@@ -1,0 +1,42 @@
+CRITICAL - 2022-12-03 08:53:15 --> simplexml_load_file(http://earthquakes.usgs.gov/eqcenter/catalogs/1day-M2.5.xml): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\Views\google_maps.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'simplexml_load_file(http://earthquakes.usgs.gov/eqcenter/catalogs/1day-M2.5.xml): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH\\Views\\google_maps.php', 38)
+ 2 APPPATH\Views\google_maps.php(38): simplexml_load_file('http://earthquakes.usgs.gov/eqcenter/catalogs/1day-M2.5.xml')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\google_maps.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('google_maps', [], true)
+ 6 APPPATH\Controllers\Home.php(75): view('google_maps')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->google_maps()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-03 08:57:00 --> simplexml_load_file(http://earthquakes.usgs.gov/eqcenter/catalogs/1day-M2.5.xml): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\Views\google_maps.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'simplexml_load_file(http://earthquakes.usgs.gov/eqcenter/catalogs/1day-M2.5.xml): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH\\Views\\google_maps.php', 38)
+ 2 APPPATH\Views\google_maps.php(38): simplexml_load_file('http://earthquakes.usgs.gov/eqcenter/catalogs/1day-M2.5.xml')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\google_maps.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('google_maps', [], true)
+ 6 APPPATH\Controllers\Home.php(75): view('google_maps')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->google_maps()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-03 08:57:06 --> simplexml_load_file(http://earthquakes.usgs.gov/eqcenter/catalogs/1day-M2.5.xml): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\Views\google_maps.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'simplexml_load_file(http://earthquakes.usgs.gov/eqcenter/catalogs/1day-M2.5.xml): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH\\Views\\google_maps.php', 38)
+ 2 APPPATH\Views\google_maps.php(38): simplexml_load_file('http://earthquakes.usgs.gov/eqcenter/catalogs/1day-M2.5.xml')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\google_maps.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('google_maps', [], true)
+ 6 APPPATH\Controllers\Home.php(75): view('google_maps')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->google_maps()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
