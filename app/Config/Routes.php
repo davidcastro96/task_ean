@@ -40,7 +40,7 @@ $routes->get('/task', 'Home::task');
 $routes->post('/login', 'Home::login');
 $routes->get('/signoff', 'Home::signoff');
 $routes->get('/registro', 'Home::registro');
-
+$routes->post('/registro', 'Home::registroUsuario');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

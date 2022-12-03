@@ -45,6 +45,26 @@ class Home extends BaseController
         return redirect()->to(base_url('/'));
     }
     // función que permite abrir el formulario de registro
+    public function registroUsuario()
+    {
+        $password = $this->request->getPost('pass');
+        $passwordc = $this->request->getPost('passc');
+        $usuario = $this->request->getPost('use');
+        $nombre = $this->request->getPost('nom');
+        $apellido = $this->request->getPost('ape');
+        $email = $this->request->getPost('email');
+        $Usuario = new Usuarios();
+
+        $Usuario->crearUsuario([
+            'password' => password_hash($password, PASSWORD_DEFAULT),
+            'usuario' => $usuario,
+            'nombre' => $nombre,
+            'apellido' => $apellido,
+            'email'    => $email,
+        ]);
+        return view('registro');
+    }
+
     public function registro()
     {
         return view('registro');
