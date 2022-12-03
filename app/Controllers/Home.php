@@ -32,9 +32,9 @@ class Home extends BaseController
             $session = session();
             $session->set($data);
 
-            return redirect()->to(base_url('/task'))->with('mensaje', '1');
+            return redirect()->to(base_url('/task'));
         } else {
-            return redirect()->to(base_url('/'))->with('mensaje', '0');
+            return redirect()->to(base_url('/'));
         }
     }
     // función o método que permite cerrar la sesión que el usuario haya creado
