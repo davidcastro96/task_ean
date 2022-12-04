@@ -22,7 +22,7 @@
       </h1>
     </div>
     <div class="col-12">
-      <p class="text--center"><a href="<?php echo base_url('/taks') ?>">Regresar</a></p>
+      <p class="text--center"><a href="<?php echo base_url('../taks') ?>">Regresar</a></p>
     </div>
   </div>
 
