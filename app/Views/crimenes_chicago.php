@@ -21,7 +21,7 @@
       <p>Este conjunto de datos refleja los incidentes reportados de delitos que han ocurrido en la ciudad de Chicago durante el año pasado, menos los últimos siete días de datos. Los datos se extraen del sistema CLEAR (Citizen Law Enforcement Analysis and Reporting) del Departamento de Policía de Chicago. Con el fin de proteger la privacidad de las víctimas de delitos, las direcciones se muestran solo a nivel de bloque y no se identifican ubicaciones específicas.
         Los datos se actualizan diariamente.</p>
       <cite>https://data.cityofchicago.org/Public-Safety/Crimes-Map/dfnk-7re6</cite>
-      <p class="text--center"><a href="<?php echo base_url('/taks') ?>">Regresar</a></p>
+      <p class="text--center"><a href="<?php echo base_url('/task') ?>">Regresar</a></p>
     </div>
   </div>
 
